@@ -1,0 +1,196 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;  /* Enhanced Typography */
+}
+
+/* Header styles */
+header {
+    background-color: #0A2F52;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.branding {
+    margin-bottom: 1em;
+}
+
+.branding h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.branding p {
+    margin: 0.5em 0;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav a {
+    color: white;  /* Change font color to white for navbar links */
+    text-decoration: none;  /* Removes underline from links */
+    transition: 0.3s;  /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    opacity: 0.7;  /* Fades link slightly on hover for an interactive effect */
+}
+
+.left-nav, .right-nav {
+    display: flex;
+    gap: 20px; /* Space between nav links */
+}
+
+.promo-banner {
+    background-color: #e69b11; /* Orange color for promo banner */
+    padding: 0.5em;
+    margin-top: 1em;
+    width: 80%;
+    margin: 1em auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Jumbotron styles */
+.jumbotron {
+    background-color: #052350;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    flex-grow: 1;
+}
+
+
+.jumbotron h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+.jumbotron p {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+
+/* Blog section styles */
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.blog-post {
+    flex-basis: calc(33.33% - 2em);
+    margin: 1em;
+    padding: 1em;
+    background-color: #f5f5f5; /* Light gray background for each post */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Simple shadow for depth */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;  /* Hover Effect */
+}
+
+.blog-post:hover {
+    transform: scale(1.05);  /* Hover Effect */
+}
+
+.blog-post h3 {
+    margin-top: 0;
+}
+
+.image-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-post img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-container {
+    padding: 1em;
+}
+
+/* Additional Content Section Styles */
+.additional-content {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 2em;
+    text-align: center;
+}
+
+.additional-content h2 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #052350; /* Keeping the color scheme */
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff4500; /* Orange on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #0A2F52;
+    color: white;  /* Ensures text in footer is white */
+    text-align: center;
+    padding: 1em;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-links, 
+footer p {
+    padding: 0.5em 0;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .blog-post {
+        flex-basis: calc(50% - 2em);
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-post {
+        flex-basis: 100%;
+    }
+}
